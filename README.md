@@ -20,7 +20,7 @@ make
 ./simple-tdbg [被追踪的程序]
 ```
 
-## Waring
+## Warning
 由于这个玩具gdb目前支持EXEC格式的ELF可执行文件，并不支持DYN和REL格式文件，因此在使用GCC生成被追踪的目标文件时，应该加上 -no-pie 选项。例如：
 ```shell
 gcc -no-pie tracee.c -o tracee
